@@ -33,6 +33,26 @@ module.exports = {
 * [组件](/react-components/index.html)
 ```
 
+4. 编译静态文档
+```
+ydoc build
+```
+
+### 怎么启动文档热加载服务？
+
+在 package.json  `scripts` 添加：
+
+```
+"scripts": {
+  "docs": "ydoc serve & ydoc-plugin-react-styleguide",
+}
+
+```
+
+启动文档服务：
+```
+npm run docs
+```
 
 ### Config Example
 
