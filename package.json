@@ -1,0 +1,21 @@
+{
+  "name": "ydoc-plugin-react-styleguide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "styleguide-server": "react-styleguidist server --config styleguide.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ydoc-plugin-react-styleguide": "bin/ydoc-plugin-react-styleguide"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "react-styleguidist": "^7.3.8",
+    "shelljs": "^0.8.2"
+  }
+}

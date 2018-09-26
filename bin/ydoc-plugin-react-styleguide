@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+
+const path = require('path');
+const shell = require('shelljs');
+const root = process.cwd()
+const config = require(path.resolve(root, 'ydoc.js'))
+const styleguideConfig = config.pluginsConfig['react-styleguide'];
+
+styleguideConfig.webpackConfig.context = root;
+
+const styleGuide = require('react-styleguidist')
+
+shell.cd(root);
+styleGuide(styleguideConfig).server(
+  (err, config) => {
+    if (err) {
+      console.error(err)
+    } else {
+      //const url = `http://${config.serverHost}:${config.serverPort}`
+      console.log(`组件服务开启成功`)
+    }
+  }
+)
+      
+
+
+
+
