@@ -37,10 +37,17 @@ module.exports = {
         path.resolve (componentsPath, indexFile),
         'utf8'
       );
-      content = content.match (/<body>([\s\S]+?)<\/body>/i);
+
+      let htmlPath = path.resolve (componentsPath +'/ydoc-replace.html');
+      fs.writeFileSync (
+        htmlPath,
+        content
+      );
+
+      let iframe = `<iframe src='ydoc-replace.html' style="border:none" width="100%" height="100%"></iframe>`
       fs.writeFileSync (
         path.resolve (componentsPath, indexFile),
-        content[1]
+        iframe
       );
     } else {
       fs.writeFileSync (
