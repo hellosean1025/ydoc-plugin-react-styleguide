@@ -1,17 +1,17 @@
 # ydoc-plugin-react-styleguide
 
-根据代码结构和注释，生成 react 组件文档，基于 [react-styleguide](https://github.com/styleguidist/react-styleguidist) 
+According to code structure and comments, generate react component documentation, based on [react-styleguide](https://github.com/styleguidist/react-styleguidist) 
 
-### 快速开始
+### Guide
 
-1.在项目目录下 install 插件：
+1.Install：
 
 ```
 npm install ydoc-plugin-react-styleguide
 
 ```
 
-2.在项目根目录 ydoc.js 中配置插件参数：
+2. ydoc.js ：
 
 ```js
 module.exports = {
@@ -21,26 +21,26 @@ module.exports = {
   }
 ```
 
-> ydoc 配置文件必须使用 ydoc.js，不能使用 ydoc.json
+> ydoc config file must use ydoc.js，not ydoc.json
 
-`reactStyleguideOptions` 配置请查看[官方文档](https://react-styleguidist.js.org/docs/configuration.html)
+`reactStyleguideOptions` [The official documentation](https://react-styleguidist.js.org/docs/configuration.html)
 
-3.在导航添加链接
+3.add link
 
-打开 docs/NAV.md，添加以下markdown:
+open docs/NAV.md， add markdown:
 
 ```markdown
-* [组件](/react-components/index.html)
+* [component](/react-components/index.html)
 ```
 
-4. 编译静态文档
+4. build html
 ```
 ydoc build
 ```
 
-### 怎么启动文档热加载服务？
+### How do I start the document hot load service？
 
-在 package.json  `scripts` 添加：
+在 package.json  `scripts` add：
 
 ```
 "scripts": {
@@ -49,7 +49,7 @@ ydoc build
 
 ```
 
-启动文档服务：
+start document server：
 ```
 npm run docs
 ```
@@ -109,8 +109,8 @@ module.exports = {
   plugins: ['react-styleguide'],
   pluginsConfig: {
     'react-styleguide': {
-      components: './components/**/index.js', //组件文档路径
-      //webpack配置
+      components: './components/**/index.js',
+      //webpack config
       webpackConfig 
     }
 }
