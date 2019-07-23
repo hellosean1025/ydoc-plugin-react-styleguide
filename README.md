@@ -2,11 +2,14 @@
 
 According to code structure and comments, generate react component documentation, based on [react-styleguide](https://github.com/styleguidist/react-styleguidist) 
 
+Depend on [ydoc](https://github.com/ymfe/ydoc)
+
 ### Guide
 
 1.Install：
 
 ```
+npm install ydoc
 npm install ydoc-plugin-react-styleguide
 
 ```
