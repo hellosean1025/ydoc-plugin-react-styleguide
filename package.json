@@ -1,6 +1,6 @@
 {
   "name": "ydoc-plugin-react-styleguide",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
-    "react-styleguidist": "^7.3.8",
+    "react-styleguidist": "^10.6.2",
     "shelljs": "^0.8.2"
   }
 }
